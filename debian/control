@@ -1,0 +1,32 @@
+Source: golang-golang-x-sync
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Michael Lustfield <michael@lustfield.net>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+               golang-golang-x-net-dev
+Standards-Version: 3.9.8
+Homepage: https://godoc.org/golang.org/x/sync
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-golang-x-sync.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-golang-x-sync.git
+XS-Go-Import-Path: golang.org/x/sync
+
+Package: golang-golang-x-sync-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-golang-x-net-dev
+Description: Supplemental Go synchronization libraries
+ This package provides supplemental Go libraries (golang.org/x/sync) that
+ were not included in the main distribution. It provides Go concurrency
+ primitives in addition to the ones provided by the language ro the "sync"
+ and "sync/atomic" packages.
+ .
+ Provides:
+   - singleflight: provides a duplicate function call suppression mechanism
+   - errgroup: provides synchronization, error propagation, and Context
+               cancellation for groups of goroutines working on subtasks
+   - semaphore: provides a weighted semaphore implementation
+   - syncmap: provides a concurrent map implementation

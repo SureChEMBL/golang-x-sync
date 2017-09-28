@@ -1,0 +1,5 @@
+golang-golang-x-sync (0.0~git20170317.0.5a06fca-1) unstable; urgency=medium
+
+  * Initial release (Closes: #859211)
+
+ -- Michael Lustfield <michael@lustfield.net>  Fri, 31 Mar 2017 12:52:45 -0500

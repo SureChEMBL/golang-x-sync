@@ -1,0 +1,2 @@
+# Upstream does not produce release tarballs
+golang-golang-x-sync source: debian-watch-file-is-missing
